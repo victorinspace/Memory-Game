@@ -110,13 +110,13 @@ function flipCard(card, val) {
 function turnCounter() {
 	let turns = document.querySelector('#turns')
 	turnsTaken++
-	turns.innerHTML = `Turns: ${turnsTaken}/10 `
+	turns.innerHTML = `Turns: ${turnsTaken}/15`
 
 	if (turnsTaken === 15) {
 		alert('You are out of turns!')
 		document.querySelector('#game-board').innerHTML = "" // clear board
 		newBoard() // begin new game
 		turnsTaken = 0
-		turns.innerHTML = 'Turns: 0/10'
+		turns.innerHTML = 'Turns: 0/15'
 	} 
 }
